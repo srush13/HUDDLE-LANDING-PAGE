@@ -149,13 +149,17 @@ ul li{
 
 //MEDIA QUERIES
 
-@media (max-width:375px){
+@media (max-width:768px){
 
+    
    .hero-content{
        width:80%;
    }
 
-
+   .logo-img{
+    height:20px;
+    width:90px;
+}
 
 .features{
     margin-top:150px;
@@ -181,13 +185,12 @@ ul li{
     flex-direction:column-reverse;
     align-items: center;
     text-align: center;
-    border:3px solid red;
-    
-
+}
     ul{
         padding-left:0;
     }
    
-}
+
+   
 
 }
