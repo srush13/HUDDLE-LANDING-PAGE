@@ -10,12 +10,10 @@ body {
   font-size: 18px;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
-  margin-right: 0;
-  margin-left: 0;
 }
 
 #bg1 {
-  background: url("../images/Group 3.svg");
+  background: url("../images/desktop-bg.svg");
   background-repeat: no-repeat;
   height: 930px;
   width: 100%;
@@ -26,6 +24,7 @@ body {
 }
 
 .navbar {
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +53,7 @@ button a {
 }
 
 .hero {
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -136,12 +136,24 @@ a {
   padding: 50px;
   background: #222222;
   color: #fff;
+}
+
+.fourcolumn-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.email {
+  margin-bottom: 10px;
+}
+
+input[type=text] {
+  border-radius: 3px;
+  border: none;
 }
 
 ul {
@@ -152,7 +164,7 @@ ul li {
   padding-bottom: 10px;
 }
 
-#logo {
+#icons {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -177,15 +189,23 @@ ul li {
 }
 
 @media (max-width: 768px) {
+  #bg1 {
+    background: url("../images/mobile-bg.svg");
+    background-repeat: no-repeat;
+  }
+  #illustration1 {
+    width: 80%;
+    height: auto;
+  }
   .hero-content {
     width: 80%;
   }
-  .logo-img {
+  .logo-img, #logofooter {
     height: 20px;
     width: 90px;
   }
   .features {
-    margin-top: 150px;
+    margin-top: 120px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -194,14 +214,19 @@ ul li {
     padding: 40px;
   }
   .call-to-action {
-    width: 80%;
-    margin: 100px auto;
-    padding: 10px;
+    margin-top: 120px;
+  }
+  .modal {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
   }
   .cta {
     padding: 10px;
   }
-  .footer {
+  ul {
+    padding-left: 0;
+  }
+  .fourcolumn-footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -211,8 +236,8 @@ ul li {
             align-items: center;
     text-align: center;
   }
-  ul {
-    padding-left: 0;
+  #logo {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
